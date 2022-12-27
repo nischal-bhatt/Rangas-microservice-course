@@ -54,6 +54,7 @@ public class HelloWorldController {
 	@GetMapping(path="/hello-world-i18n")
 	public String helloWorldInternationalized()
 	{
+		System.out.println("test add");
 		Locale locale = LocaleContextHolder.getLocale();
 		return this.messageSource.getMessage("good.morning.message", null,"defalt msg",locale);
 	}

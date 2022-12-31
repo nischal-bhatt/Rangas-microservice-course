@@ -11,4 +11,4 @@ values
 insert into currency_exchange
 (id,currency_from,currency_to,conversion_multiple,environment)
 values
-(10003,'AUD','INR',25,'');
+(10003,'AUD','INR',17,'');

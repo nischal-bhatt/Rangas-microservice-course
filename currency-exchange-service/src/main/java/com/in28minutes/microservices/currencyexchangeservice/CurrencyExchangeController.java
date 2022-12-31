@@ -20,6 +20,7 @@ public class CurrencyExchangeController {
 	 @GetMapping("/currency-exchange/from/{from}/to/{to}")
 	 public CurrencyExchange retrieveExchangeValue(@PathVariable String from, @PathVariable String to)
 	 {
+		 System.out.println("in here in currency exchange");
 		// CurrencyExchange ex= new CurrencyExchange(1000L, from, to, BigDecimal.valueOf(50));
 	 
 		 CurrencyExchange ex = this.repository.findByFromAndTo(from, to);

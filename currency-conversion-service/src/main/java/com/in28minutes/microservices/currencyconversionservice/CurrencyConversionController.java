@@ -44,7 +44,7 @@ public class CurrencyConversionController {
 			@PathVariable BigDecimal quantity
 			)
 	{
-		
+		System.out.println("in here in currency conversion");
 		CurrencyConversion cc = proxy.retrieveExchangeValue(from,to);
 		return new CurrencyConversion(cc.getId(),cc.getFrom(),cc.getTo(),quantity,cc.getConversionMultiple(),quantity.multiply(cc.getConversionMultiple()),cc.getEnvironment() + " feign ");
 	}

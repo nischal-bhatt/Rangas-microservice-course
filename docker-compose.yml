@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+
+  currency-exchange:
+    image: babumushai:0.0.1-SNAPSHOT
+    mem_limit: 700m
+    ports:
+      - "8080:8080"
+    networks:
+      - nora-fatehi
+    environment:
+      valueToReturn: now it shold work!    
+
+networks:
+  nora-fatehi:
